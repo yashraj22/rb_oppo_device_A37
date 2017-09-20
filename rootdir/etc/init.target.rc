@@ -50,7 +50,7 @@ on init
     write /sys/module/zswap/parameters/max_pool_percent 35
     write /sys/module/zswap/parameters/enabled 1
 
-service vm_bms /system/vendor/bin/vm_bms
+service vendor.vm_bms /system/vendor/bin/vm_bms
     class main
     user root
     group root wakelock
@@ -100,6 +100,7 @@ on charger
    chmod 0664 /sys/class/power_supply/bms/current_now
    chmod 0664 /sys/class/power_supply/bms/voltage_ocv
    load_system_props
+
    start vm_bms
 
 on property:sys.boot_completed=1
