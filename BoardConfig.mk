@@ -130,7 +130,6 @@ QCOM_BT_READ_ADDR_FROM_PROP := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Charger
-BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
