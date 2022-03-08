@@ -210,6 +210,7 @@ PRODUCT_PACKAGES += \
     SnapdragonCamera
 
 
+<<<<<<< HEAD
 #PRODUCT_COPY_FILES += \
 #$(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
@@ -227,6 +228,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libinit_msm8916
 
+=======
+>>>>>>> 0a5069f (A37: rootdir: Remove chargeonlymode)
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
