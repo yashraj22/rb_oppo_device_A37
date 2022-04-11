@@ -210,7 +210,6 @@ PRODUCT_PACKAGES += \
     SnapdragonCamera
 
 
-<<<<<<< HEAD
 #PRODUCT_COPY_FILES += \
 #$(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
@@ -228,8 +227,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libinit_msm8916
 
-=======
->>>>>>> 0a5069f (A37: rootdir: Remove chargeonlymode)
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
@@ -466,7 +463,7 @@ PRODUCT_COPY_FILES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.cyanogen_8916
+    android.hardware.usb@1.0-service.basic
 
 # Hack
 PRODUCT_COPY_FILES += \
@@ -558,8 +555,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.id.ums_adb=2285 \
     ro.usb.vid=2970
 
-<<<<<<< HEAD
-=======
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v29.so
@@ -574,5 +569,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # Call the proprietary setup
->>>>>>> 96c3bcf (A37: Use libprotobuf-cpp-lite-v29.so for libwvdrmengine.so)
 $(call inherit-product, vendor/oppo/A37/A37-vendor.mk)
